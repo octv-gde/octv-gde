@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Octave Goudon | Étudiant Ingénieur ESILV</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <a href="#" class="nav-logo">Octave Goudon</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">À propos</a>
+      <a href="#education">Formation</a>
+      <a href="#projects">Projets</a>
+      <a href="#skills">Compétences</a>
+      <a href="#contact">Contact</a>
+      <a href="CV_Octave_Goudon.pdf" class="nav-cv" target="_blank">CV</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Octave Goudon</h1>
+      <h2>Étudiant ingénieur à l'ESILV<br><span class="hero-accent">Mathématiques · Physique · Informatique</span></h2>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="photo_octave.jpg" alt="Photo d'Octave Goudon" class="hero-img" />
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="section-inner">
+      <div class="about-img-wrap">
+        <img src="photo_octave.jpg" alt="Octave Goudon" />
+      </div>
+      <div class="about-text">
+        <h2 class="section-title">À propos de moi</h2>
+        <p>
+          Passionné par les sciences, les mathématiques et l'informatique, je suis étudiant ingénieur à l'ESILV après deux années de classe préparatoire PC au Lycée Saint-Joseph d'Aix-en-Provence. Mon parcours m'a permis de développer une rigueur analytique solide, que j'applique aussi bien aux problèmes théoriques qu'aux projets concrets.
+        </p>
+        <p>
+          Curieux et polyvalent, je m'intéresse notamment à l'optimisation numérique, aux bases de données et à l'analyse de données. En dehors des études, je pratique le water-polo en compétition, l'équitation, le ski alpin, le VTT et bien d'autres activités qui forgent mon esprit d'équipe et ma persévérance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section education" id="education">
+    <h2 class="section-title centered">Mon parcours académique</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="tl-date">2024 – 2027 <span>(prévisionnel)</span></div>
+        <div class="tl-card">
+          <h3>ESILV – École Supérieure d'Ingénieurs Léonard de Vinci</h3>
+          <p class="tl-sub">Diplôme d'ingénieur</p>
+          <p>Formation d'ingénieur généraliste couvrant les mathématiques appliquées, l'informatique, la physique et les sciences de l'ingénieur.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">2023 – 2025</div>
+        <div class="tl-card">
+          <h3>Lycée Saint-Joseph – Aix-en-Provence</h3>
+          <p class="tl-sub">Classe Préparatoire aux Grandes Écoles – Filière PC</p>
+          <p>Formation intensive en mathématiques, physique et chimie. TIPE sur l'optimisation des matériaux pour les supercondensateurs.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">2022 – 2023</div>
+        <div class="tl-card">
+          <h3>ACESUP</h3>
+          <p class="tl-sub">Préparation anticipée aux CPGE</p>
+          <p>Préparation intensive aux classes préparatoires scientifiques.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">2020 – 2023</div>
+        <div class="tl-card">
+          <h3>Lycée Sainte-Catherine-de-Sienne</h3>
+          <p class="tl-sub">Baccalauréat général – Mention Bien</p>
+          <p>Spécialités Mathématiques et Physique-Chimie. Section européenne, certification Cambridge English (B2). Président du BDE.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">2016 – 2020</div>
+        <div class="tl-card">
+          <h3>Collège La Chesneraie</h3>
+          <p class="tl-sub">Section sport-études Water-polo</p>
+          <p>Pratique du water-polo en compétition au sein d'une section sport-études. Pratique du trombone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects" id="projects">
+    <h2 class="section-title centered">Mes projets</h2>
+    <p class="section-subtitle">Travaux académiques, projets de recherche et analyses de données réalisés au cours de ma formation.</p>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <a href="projets/KNN.pdf" target="_blank" class="project-thumb-link">
+          <div class="project-thumb" style="background-image: url('thumbnails/KNN.png')">
+            <div class="project-overlay"><span>Voir le projet →</span></div>
+          </div>
+        </a>
+        <div class="project-info">
+          <span class="project-tag">Intelligence Artificielle</span>
+          <h3>Fondements de l'IA : Compétition Kaggle</h3>
+          <p>Mise en place d'un modèle K-Nearest Neighbors (KNN) et participation à une compétition Kaggle d'apprentissage automatique.</p>
+          <a href="projets/KNN.pdf" target="_blank" class="project-link">Voir le projet →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <a href="#" class="project-thumb-link video-trigger">
+          <div class="project-thumb" style="background-image: url('thumbnails/thumb_ANSSI.png')">
+            <div class="project-overlay video-trigger" style="opacity: 1; background: rgba(0,0,0,0.3);">
+              <svg class="play-icon" width="60" height="60" viewBox="0 0 24 24" fill="var(--accent)" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5V19L19 12L8 5Z" />
+              </svg>
+            </div>
+          </div>
+        </a>
+        <div class="project-info">
+          <span class="project-tag">Cybersécurité</span>
+          <h3>ANSSI</h3>
+          <p>Projet lié aux enjeux de cybersécurité en partenariat avec l'Agence Nationale de la Sécurité des Systèmes d'Information.</p>
+          <a href="https://nbviewer.org/github/octv-gde/octv-gde/blob/main/projets/ANSSI.ipynb" target="_blank" class="project-link">Voir le Notebook →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <a href="projets/alterdune.pdf" target="_blank" class="project-thumb-link">
+          <div class="project-thumb" style="background-image: url('thumbnails/thumb_alterdune.png')">
+            <div class="project-overlay"><span>Voir le projet →</span></div>
+          </div>
+        </a>
+        <div class="project-info">
+          <span class="project-tag">Projet</span>
+          <h3>Alterdune</h3>
+          <p>Description du projet Alterdune — à compléter selon le contenu du projet.</p>
+          <a href="projets/alterdune.pdf" target="_blank" class="project-link">Voir le projet →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <a href="projets/runge.pdf" target="_blank" class="project-thumb-link">
+          <div class="project-thumb" style="background-image: url('thumbnails/thumb_runge.png')">
+            <div class="project-overlay"><span>Voir le projet →</span></div>
+          </div>
+        </a>
+        <div class="project-info">
+          <span class="project-tag">Analyse numérique</span>
+          <h3>Maîtriser le phénomène de Runge en interpolation polynomiale</h3>
+          <p>Étude et contrôle du phénomène de Runge dans le cadre de l'interpolation polynomiale de fonctions sur des intervalles bornés.</p>
+          <a href="projets/runge.pdf" target="_blank" class="project-link">Voir le projet →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <a href="projets/newton.pdf" target="_blank" class="project-thumb-link">
+          <div class="project-thumb" style="background-image: url('thumbnails/thumb_newton.png')">
+            <div class="project-overlay"><span>Voir le projet →</span></div>
+          </div>
+        </a>
+        <div class="project-info">
+          <span class="project-tag">Analyse numérique</span>
+          <h3>Résolution d'équations : de la méthode du point fixe à l'algorithme de Newton</h3>
+          <p>Comparaison et implémentation des méthodes de résolution d'équations non-linéaires, de la convergence du point fixe à la méthode de Newton-Raphson.</p>
+          <a href="projets/newton.pdf" target="_blank" class="project-link">Voir le projet →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <a href="projets/quadrature.pdf" target="_blank" class="project-thumb-link">
+          <div class="project-thumb" style="background-image: url('thumbnails/thumb_quadrature.png')">
+            <div class="project-overlay"><span>Voir le projet →</span></div>
+          </div>
+        </a>
+        <div class="project-info">
+          <span class="project-tag">Analyse numérique</span>
+          <h3>Quadrature numérique : maîtriser l'erreur d'intégration</h3>
+          <p>Analyse des méthodes de quadrature numérique (rectangles, trapèzes, Simpson, Gauss) et étude rigoureuse des erreurs d'approximation.</p>
+          <a href="projets/quadrature.pdf" target="_blank" class="project-link">Voir le projet →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <a href="projets/bdd_sncf.pdf" target="_blank" class="project-thumb-link">
+          <div class="project-thumb" style="background-image: url('thumbnails/thumb_bdd_sncf.png')">
+            <div class="project-overlay"><span>Voir le projet →</span></div>
+          </div>
+        </a>
+        <div class="project-info">
+          <span class="project-tag">Base de données</span>
+          <h3>Conception d'une Base de Données : Application à la SNCF</h3>
+          <p>Modélisation entité-relation, conception du schéma relationnel et implémentation SQL d'une base de données appliquée au réseau ferroviaire SNCF.</p>
+          <a href="projets/bdd_sncf.pdf" target="_blank" class="project-link">Voir le projet →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <a href="https://nbviewer.org/github/VOTRE_PSEUDO/VOTRE_DEPOT/blob/main/projets/dpe_analysis.ipynb" target="_blank" class="project-thumb-link">
+          <div class="project-thumb" style="background-image: url('thumbnails/thumb_dpe.png')">
+            <div class="project-overlay"><span>Voir le Notebook →</span></div>
+          </div>
+        </a>
+        <div class="project-info">
+          <span class="project-tag">Data Science</span>
+          <h3>Dataset project analysis : Analysis of Energy Performance Certificates (DPE)</h3>
+          <p>Analyse exploratoire et statistique d'un jeu de données de diagnostics de performance énergétique (DPE) — nettoyage, visualisation et extraction d'insights.</p>
+          <a href="https://nbviewer.org/github/octv-gde/octv-gde/blob/main/projets/dpe_analysis.ipynb" target="_blank" class="project-link">Voir le Notebook →</a>
+        </div>
+      </div>
+
+      <div class="project-card project-card--featured">
+        <a href="projets/tipe.pdf" target="_blank" class="project-thumb-link">
+          <div class="project-thumb" style="background-image: url('thumbnails/thumb_tipe.jpg')">
+            <div class="project-overlay"><span>Voir le projet →</span></div>
+          </div>
+        </a>
+        <div class="project-info">
+          <span class="project-tag">TIPE · CPGE</span>
+          <h3>TIPE : Optimisation des matériaux pour améliorer la densité énergétique des supercondensateurs</h3>
+          <p>Travail d'Initiative Personnelle Encadré mené en CPGE PC. Étude expérimentale et théorique de l'optimisation des électrodes de supercondensateurs pour maximiser la densité énergétique.</p>
+          <a href="projets/tipe.pdf" target="_blank" class="project-link">Voir le projet →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <h2 class="section-title centered">Compétences</h2>
+    <div class="skills-grid">
+      <div class="skills-col">
+        <h3>Techniques</h3>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Mathématiques / Analyse numérique</span><span>90%</span></div><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Python</span><span>80%</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>SQL / Bases de données</span><span>75%</span></div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>HTML / CSS</span><span>65%</span></div><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Physique / Chimie</span><span>85%</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+      </div>
+      <div class="skills-col">
+        <h3>Transversales</h3>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Rigueur & Méthode</span><span>95%</span></div><div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Travail d'équipe</span><span>90%</span></div><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Gestion de projet</span><span>80%</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Communication</span><span>85%</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+      </div>
+      <div class="skills-col">
+        <h3>Langues</h3>
+        <div class="lang-item"><span class="lang-name">Français</span><span class="lang-level native">Langue maternelle</span></div>
+        <div class="lang-item"><span class="lang-name">Anglais</span><span class="lang-level b2">B2 – Cambridge English</span></div>
+        <div class="lang-item"><span class="lang-name">Espagnol</span><span class="lang-level b1">B1</span></div>
+      </div>
+    </div>
+    <div class="tech-section">
+      <h3>Technologies &amp; Outils</h3>
+      <div class="tech-tags">
+        <span>Python</span><span>SQL</span><span>HTML/CSS</span><span>Git / GitHub</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>LaTeX</span><span>Jupyter</span><span>Excel</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2 class="section-title centered">Me contacter</h2>
+    <div class="contact-inner">
+      <div class="contact-info">
+        <h3>Informations de contact</h3>
+        <p>Vous souhaitez discuter d'un projet, d'une opportunité de stage ou simplement échanger ? N'hésitez pas à me contacter.</p>
+        <ul class="contact-list">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,12 2,6"></polyline></svg>
+            <a href="mailto:octave.goudon@icloud.com">octave.goudon@icloud.com</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Aix-en-Provence / Paris, France</span>
+          </li>
+        </ul>
+        <div class="contact-social">
+          <a href="https://www.linkedin.com/in/octave-goudon-bb3080263/" target="_blank" class="social-btn linkedin">LinkedIn</a>
+        </div>
+        <a href="CV_Octave_Goudon.pdf" target="_blank" class="btn btn-primary" style="margin-top:1.5rem; display:inline-block;">Télécharger mon CV</a>
+      </div>
+
+      <div class="contact-cta">
+        <p>Vous pouvez me contacter directement par e-mail ou via LinkedIn pour discuter d'opportunités de stage ou de projets.</p>
+        <a href="mailto:octave.goudon@icloud.com" class="btn btn-primary">Envoyer un e-mail</a>
+        <a href="https://www.linkedin.com/in/octave-goudon-bb3080263/" target="_blank" class="btn btn-outline">Me contacter sur LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="#" class="footer-logo">Octave Goudon</a>
+    <p>Étudiant ingénieur à l'ESILV</p>
+    <p class="footer-copy">© 2025 Octave Goudon. Tous droits réservés.</p>
+  </footer>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <video id="projectVideo" controls>
+        <source src="projets/video_anssi.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la balise vidéo.
+      </video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
