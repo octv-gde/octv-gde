@@ -368,20 +368,25 @@ ul { list-style: none; }
   box-shadow: var(--shadow);
 }
 
+/* Featured card (TIPE) */
 .project-card--featured {
   grid-column: span 2;
   flex-direction: row;
 }
+
+/* Amélioration Miniature TIPE */
 .project-card--featured .project-thumb {
   flex-shrink: 0;
-  width: 45%;
-  min-height: 220px;
+  width: 42%;
+  min-height: 280px; /* Hauteur augmentée pour mieux voir le contenu */
+  background-position: top center; /* Priorité au haut du poster (titre) */
 }
+
 .project-card--featured .project-info {
   padding: 2rem;
 }
 
-.project-thumb-link { display: block; position: relative; }
+.project-thumb-link { display: block; }
 .project-thumb {
   width: 100%;
   aspect-ratio: 16/9;
@@ -391,6 +396,7 @@ ul { list-style: none; }
   position: relative;
   overflow: hidden;
 }
+/* Fallback gradient when no thumbnail */
 .project-thumb:not([style*="url"]),
 .project-thumb[style*="url('')"],
 .project-thumb[style*='url("")'] {
@@ -404,7 +410,7 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity var(--transition), background var(--transition);
+  transition: opacity var(--transition);
 }
 .project-overlay span {
   color: var(--accent);
@@ -498,6 +504,7 @@ ul { list-style: none; }
 }
 .skill-fill.animated { transform: scaleX(1); }
 
+/* Languages */
 .lang-item {
   display: flex;
   justify-content: space-between;
@@ -518,6 +525,7 @@ ul { list-style: none; }
 .lang-level.b2     { background: rgba(100,180,120,.15); color: #7ecb9a; }
 .lang-level.b1     { background: rgba(100,140,200,.15); color: #7ab0e0; }
 
+/* Tech tags */
 .tech-section {
   max-width: 1100px;
   margin: 0 auto;
@@ -585,7 +593,11 @@ ul { list-style: none; }
 .contact-list a:hover { opacity: .75; }
 .contact-list svg { color: var(--accent); flex-shrink: 0; }
 
-.contact-social { display: flex; gap: .75rem; margin-top: 1.5rem; }
+.contact-social {
+  display: flex;
+  gap: .75rem;
+  margin-top: 1.5rem;
+}
 .social-btn {
   padding: .45rem 1.1rem;
   border-radius: var(--radius);
@@ -628,62 +640,14 @@ ul { list-style: none; }
   display: block;
   margin-bottom: .5rem;
 }
-.footer p { color: var(--text-muted); font-size: .85rem; }
-.footer-copy { margin-top: .5rem; font-size: .78rem !important; opacity: .5; }
-
-/* =========================================================
-   MODALE VIDEO
-   ========================================================= */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  backdrop-filter: blur(5px);
-  align-items: center;
-  justify-content: center;
+.footer p {
+  color: var(--text-muted);
+  font-size: .85rem;
 }
-.modal.show {
-  display: flex;
-}
-.modal-content {
-  position: relative;
-  width: 90%;
-  max-width: 1000px;
-  background: #000;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-.modal-content video {
-  width: 100%;
-  display: block;
-  border-radius: var(--radius);
-  outline: none;
-}
-.close-modal {
-  position: absolute;
-  top: -45px;
-  right: 0;
-  color: var(--text);
-  font-size: 2.5rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: color var(--transition);
-}
-.close-modal:hover {
-  color: var(--accent);
-}
-
-/* Animation icône Play */
-.play-icon {
-  transition: transform var(--transition);
-}
-.project-thumb-link:hover .play-icon {
-  transform: scale(1.15);
+.footer-copy {
+  margin-top: .5rem;
+  font-size: .78rem !important;
+  opacity: .5;
 }
 
 /* =========================================================
@@ -707,20 +671,28 @@ ul { list-style: none; }
   }
   .nav-links.open { right: 0; }
   .burger { display: flex; }
+
   .hero { flex-direction: column-reverse; padding: 7rem 1.5rem 3rem; text-align: center; }
   .hero-btns { justify-content: center; }
   .hero-img-wrap { width: 200px; }
+
   .section { padding: 4rem 1.5rem; }
+
   .about .section-inner { flex-direction: column; }
   .about-img-wrap { width: 180px; margin: 0 auto; }
+
   .timeline { padding-left: 1.5rem; }
   .timeline-item { flex-direction: column; gap: .5rem; }
   .tl-date { width: auto; }
+
   .project-card--featured { flex-direction: column; grid-column: span 1; }
   .project-card--featured .project-thumb { width: 100%; aspect-ratio: 16/9; }
+
   .contact-inner { flex-direction: column; }
+
   .footer { padding: 2rem 1.5rem; }
 }
+
 @media (max-width: 600px) {
   .projects-grid { grid-template-columns: 1fr; }
 }
