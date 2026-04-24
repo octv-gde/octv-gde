@@ -368,22 +368,23 @@ ul { list-style: none; }
   box-shadow: var(--shadow);
 }
 
-/* Featured card (TIPE) */
+/* Featured card spans 2 columns */
 .project-card--featured {
   grid-column: span 2;
   flex-direction: row;
+  align-items: stretch; /* S'assure que l'image et le texte font la même hauteur */
 }
-
-/* Amélioration Miniature TIPE */
 .project-card--featured .project-thumb {
   flex-shrink: 0;
-  width: 42%;
-  min-height: 280px; /* Hauteur augmentée pour mieux voir le contenu */
-  background-position: top center; /* Priorité au haut du poster (titre) */
+  width: 40%;
+  aspect-ratio: auto; /* Désactive l'aspect-ratio fixe pour le mode ligne */
+  background-size: contain; /* Évite de couper les schémas techniques */
+  background-repeat: no-repeat;
+  background-color: #fff; /* Fond blanc pour les schémas sur fond blanc */
+  border-right: 1px solid var(--border);
 }
-
 .project-card--featured .project-info {
-  padding: 2rem;
+  padding: 2.2rem;
 }
 
 .project-thumb-link { display: block; }
@@ -686,7 +687,12 @@ ul { list-style: none; }
   .tl-date { width: auto; }
 
   .project-card--featured { flex-direction: column; grid-column: span 1; }
-  .project-card--featured .project-thumb { width: 100%; aspect-ratio: 16/9; }
+  .project-card--featured .project-thumb { 
+    width: 100%; 
+    aspect-ratio: 16/9; 
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
 
   .contact-inner { flex-direction: column; }
 
