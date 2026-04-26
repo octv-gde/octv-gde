@@ -702,3 +702,7 @@ ul { list-style: none; }
 @media (max-width: 600px) {
   .projects-grid { grid-template-columns: 1fr; }
 }
+
+.logo-wrap img {
+  aspect-ratio: 1/1; /* carré uniquement pour le logo */
+}
